@@ -1,0 +1,9 @@
+<view class='container'>
+<view class='settings-view'>
+  <view class='settings-view-toolbar'>
+    <image class='page-view-back' src="/images/back.png" bindtap='navigateBack'></image>
+    <text class='page-view-text'> 恋爱链</text>
+</view>
+  <image class='img' mode="widthFix" src='/images/forget.png'></image>
+</view>
+</view>

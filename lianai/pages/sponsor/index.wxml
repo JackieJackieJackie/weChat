@@ -1,0 +1,209 @@
+<view class='container' wx:if="{{isSplashModal}}">
+  <view class='splash-view'>
+    <view class="splash-view-image">
+      <image class='splash-image' src="/images/splash.png"></image>
+      <view class='splash-view-image2'>
+        <image class='splash-view-image-single' src="/images/splash_singleperson.png" catchtap='splashModal'></image>
+        <image class='splash-view-image-double' src="/images/splash_doubleperson.png" catchtap='splashModal'></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- 测试授权使用 -->
+   <!-- <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
+  <button open-type="openSetting">打开授权设置页</button>   -->
+</view>
+
+<view class='container' wx:if="{{!isSplashModal}}">
+
+
+  <view class='home-image'>
+    <image class='img' src='{{sgnum==0?"/images/sponsor_main_bg2.png":"/images/sponsor_main_bg.png"}}' mode="widthFix"></image>
+    <text class='page-view-text'> 恋爱链</text>
+
+    <view class='inviteInfo' bindtap='onInfo'>链秘籍</view>
+
+    <view class='sganim {{ sgnum==0 && tag!="inviteZf"?"home-invite":"hide"}}'>
+      <image class='home-invite-icon' src='/images/btn_diamond.png'></image>
+      <text class='home-invite-text'>正在生长中</text>
+      <button wx:if="{{!match}}" class='home-image-button' bindtap='onInviteloves'>邀请心上人</button>
+
+      <!-- <button wx:if="{{canIUse}}" open-type="getUserInfo"bindgetuserinfo="bindGetUserInfo">授权登录</button> -->
+    </view>
+    <view class='{{tag=="inviteZf"?"home-invite":"hide"}}'>
+      <image class='home-invite-icon' src='/images/btn_diamond.png'></image>
+      <button class='inviteMy' bindtap='onZfReg'>开通我的恋爱链</button>
+    </view>
+    <view class='{{ sgnum>0?"home-invite":"hide"}}'>
+      <view>
+        <view wx:for="{{sgList}}" wx:key="id" wx:for-index="index" wx:for-item="it">
+          <view class="{{sgClk[index]==1? 'clkanim'+index:'sganim'}}" style="position:absolute;left:{{it.x}}rpx;top:{{it.y}}rpx;" catchtap='clkSg' id="{{index}}">
+            <image class='home-sg-icon' src='/images/btn_diamond.png'></image>
+            <text class='home-sg-text'>{{it.value}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 头像 -->
+    <view class='home-image-date-view'>
+      <view class='invitelove-image' bindtap='onUserInfo'>
+        <image class='invitelove-image-icon-bg' src='/images/sponsor_main_photo_man.png'></image>
+        <image class='invitelove-image-icon' src='{{myIcon}}'></image>
+        <image wx:if="{{match}}" class='invitelove-image-icon2-bg' src='/images/sponsor_main_photo_woman.png'></image>
+        <image wx:if="{{match}}" class='invitelove-image-icon2' src='{{loverIcon}}'></image>
+      </view>
+    </view>
+    <view class='home-image-date-view2'>
+      <view class='invitelove-image2' bindtap='onLoveGarden'>
+        <image class='invitelove-image-icon-bg2' src='/images/sponsor_main_photo_flower.png'></image>
+        <text>恋爱花园</text>
+      </view>
+    </view>
+    <!-- <view class='{{insured?"home-image-date-view":"hide"}}'>
+      <text class='home-image-date strong'>{{item.leftDays}}</text>
+      <text class='home-image-date-text'>天</text>
+      <text class='home-image-date-text2'>{{insureLabel}}</text>
+    </view> -->
+  </view>
+  <view class='home-raingking'>
+
+    <view class='home-raingking-title'>
+      <text class='home-ranking-text'>恋爱钻排行榜</text>
+      <button class='{{match && tag!="inviteZf"?"inviteZf":"hide"}}' bindtap='showModal'>加速恋爱钻</button>
+    </view>
+    <view class='home-raingking-list'>
+      <text class='home-ranking-rank'>名次</text>
+      <text class='home-ranking-icon'></text>
+      <text class='home-ranking-zuan'>恋爱钻</text>
+      <text wx:if="{{match}}" class='home-ranking-days'>相恋天数</text>
+    </view>
+    <view class='home-raingking-list' wx:for="{{rankList}}" wx:key="id" wx:for-index="index" wx:for-item="it">
+      <text class='home-ranking-rank'>{{index+1}}</text>
+      <view class='home-ranking-icon'>
+        <image class='home-ranking-image-icon' src='/images/sponsor_main_photo_man.png'></image>
+        <image class='home-ranking-image-icon' src='{{it.createWxavatar}}'></image>
+        <image wx:if="{{match}}" class='home-ranking-image-icon2' src='/images/sponsor_main_photo_woman.png'></image>
+        <image wx:if="{{match}}" class='home-ranking-image-icon2' src='{{it.loverWxavatar}}'></image>
+        <image wx:if="{{match}}" class='home-ranking-image-love' src='/images/love3.png'></image>
+      </view>
+      <text class='home-ranking-zuan'>{{it.diamond==null?0:it.diamond}}</text>
+      <text wx:if="{{match}}" class='home-ranking-days'>{{it.loveDays==null?0:it.loveDays}}</text>
+    </view>
+
+    <image class='home-image-icon-bottom' src='/images/sponsor_main_bg_bottom.png'></image>
+  </view>
+
+  <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}">
+  </view>
+  <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+    <view class="invite-bottom-view">
+      <text class="invite-bottom-title">当前恋爱钻： {{cntZuan}}</text>
+      <view class='invite-bottom-item'>
+        <image class='invite-bottom-icon' src='/images/ic_friend.png'></image>
+        <text class="invite-bottom-text">邀请好友送祝福</text>
+        <text class="invite-bottom-tip">恋爱钻+5</text>
+        <button class="invite-bottom-btn" open-type="share" id="friend">邀请</button>
+      </view>
+      <view class='invite-bottom-item'>
+        <image class='invite-bottom-icon' src='/images/ic_login.png'></image>
+        <text class="invite-bottom-text">邀请心上人登录</text>
+        <text class="invite-bottom-tip">恋爱钻+1</text>
+        <button class="invite-bottom-btn" open-type="share" id="login">邀请</button>
+      </view>
+    </view>
+    <button class="invite-bottom-cancel" bindtap='hideModal'>取消</button>
+  </view>
+
+
+  <!--弹窗  -->
+  <view class='shade_box' wx:if="{{tag=='inviteZf' && zf==false && closeEject==false}}">
+    <view class='modal tc '>
+      <view class='m-invitelove-image'>
+        <image class='m-invitelove-image-icon-bg' src='/images/sponsor_main_photo_man.png'></image>
+        <image class='m-invitelove-image-icon' src='{{myIcon}}'></image>
+        <image class='m-invitelove-image-icon2-bg' src='/images/sponsor_main_photo_woman.png'></image>
+        <image class='m-invitelove-image-icon2' src='{{loverIcon}}'></image>
+        <image class='m-invitelove-image-love' src='/images/love2.png'></image>
+      </view>
+      <view class='grey f14'>等你等的黄花菜都凉了</view>
+      <view class='grey f14'>快来送祝福吧！</view>
+      <image class='m-invitelove-image-zf' src='/images/btn_diamond.png' bindtap="onZf"></image>
+      <view>点击钻石送祝福</view>
+      <image class="close" src="/images/close_b.png" catchtap='closeEject'></image>
+
+    </view>
+    <view class="shade_bg" catchtap='closeEject'></view>
+  </view>
+
+  <!--弹窗  -->
+  <view class='shade_box' wx:if="{{tagDenglu && closeEject==false}}">
+    <view class='modal tc '>
+      <view class='m-invitelove-image'>
+        <image class='m-invitelove-image-icon-bg' src='/images/sponsor_main_photo_man.png'></image>
+        <image class='m-invitelove-image-icon' src='{{myIcon}}'></image>
+        <image class='m-invitelove-image-icon2-bg' src='/images/sponsor_main_photo_woman.png'></image>
+        <image class='m-invitelove-image-icon2' src='{{loverIcon}}'></image>
+        <image class='m-invitelove-image-love' src='/images/love2.png'></image>
+      </view>
+      <view class='grey f14'>在天愿作比翼鸟，在地愿为连理枝</view>
+      <view class='grey f14'>欢迎回来，快领取奖励吧</view>
+      <image class='m-invitelove-image-zf' src='/images/btn_diamond.png' bindtap="onDz"></image>
+      <view>点击钻石领取恋爱钻</view>
+      <image class="close" src="/images/close_b.png" catchtap='closeEject'></image>
+
+    </view>
+    <view class="shade_bg" catchtap='closeEject'></view>
+  </view>
+
+  <!--弹窗  -->
+  <view class='shade_box' wx:if="{{showInfo==true && closeEject==false}}">
+    <view class='modal' style="padding:0;width:80%;height:auto">
+      <image class="img" src="/images/info.png" mode="widthFix"></image>
+      <image class="close" src="/images/close.png" catchtap='closeEject'></image>
+    </view>
+    <view class="shade_bg" catchtap='closeEject'></view>
+  </view>
+  <!--弹窗  -->
+  <view class='shade_box' wx:if="{{showUserInfo==true && closeEject==false}}">
+    <view class='modal2' style="padding:0;width:100%;height:auto">
+      <image class="img" src="/images/userinfo_bg.png" mode="widthFix"></image>
+      <image class="close2" src="/images/close_b.png" catchtap='closeEject'></image>
+      <view class='home-userinfo-icon'>
+        <image class='home-userinfo-image-icon-bg' src='/images/sponsor_main_photo_man.png'></image>
+        <image class='home-userinfo-image-icon' src='{{myIcon}}'></image>
+        <image class='home-userinfo-image-icon2-bg' src='/images/sponsor_main_photo_woman.png' wx:if="{{match}}"></image>
+        <image class='home-userinfo-image-icon2' src='{{loverIcon}}' wx:if="{{match}}"></image>
+        <image class='home-userinfo-image-love' src='/images/love3.png' wx:if="{{match}}"></image>
+      </view>
+      <view class='home-userinfo-icon3' wx:if="{{match}}">
+        <view class='home-userinfo-icon2'>
+          <text class='home-image-text3'>{{leftDays==null?0:leftDays}}</text>
+          <text class='home-image-text4'>天</text>
+        </view>
+        <text class='home-image-text5'>{{insureLabel}}</text>
+      </view>
+      <view class='home-userinfo-view'>
+
+        <view class='home-userinfo-view2' bindtap='onViewCnt'>
+          <text class='home-image-text'>当前恋爱钻</text>
+          <text class='home-image-text2'>{{myRanking.diamond==null?0:myRanking.diamond}}</text>
+        </view>
+        <view class='home-userinfo-view2' bindtap='onViewCnt'>
+          <text class='home-image-text'>当前排名</text>
+          <text class='home-image-text2'>{{myRanking.rank==null?0:myRanking.rank}}</text>
+        </view>
+        <view class='home-userinfo-view2' bindtap='onViewCnt'>
+          <text class='home-image-text'>相恋天数</text>
+          <text class='home-image-text2'>{{myRanking.loveDays==null?0:myRanking.loveDays}}</text>
+        </view>
+      </view>
+
+
+    </view>
+    <view class="shade_bg" catchtap='closeEject'></view>
+
+
+  </view>
+
+
+</view>

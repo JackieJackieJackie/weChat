@@ -1,0 +1,32 @@
+.strategy-view {
+  width: 100%;
+  height: 100%;
+  position: fixed;  
+  display: flex;
+  background: #ffdac7;
+  flex-direction: column;
+  font-size: 30rpx;
+}
+.strategy-view-toolbar{
+    width: 100%;
+  height: 132rpx;
+  justify-content: center;
+  display: flex;
+  background: #fd957f;
+}
+.strategy-view-image{
+   width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.strategy-image{
+  width: 720rpx;
+  height:851rpx;
+
+}
+.strategy-image2{
+  width: 100%;
+  height:2500rpx;
+}

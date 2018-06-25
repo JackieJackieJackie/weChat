@@ -1,0 +1,861 @@
+inviteInfo.bg {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+}
+.img {
+  width: 100%;
+}
+.close {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+}
+.close2 {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 100rpx;
+}
+.home-image {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-self: center;
+  display: flex;
+}
+
+.home-userinfo-view{
+  position: absolute;
+   left: 100rpx;
+   right: 100rpx;
+  top: 250rpx;
+  height: 120rpx;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+.home-userinfo-view2{
+   width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ .home-image-text{
+  left:0;
+  right:0;
+  top:0;
+  bottom: 0;
+  margin:auto;
+} 
+.home-image-text2{
+  left:0;
+  right:0;
+  top:30rpx;
+  bottom: 0;
+  margin:auto;
+  color: #999999;
+} 
+.home-image-text3{
+  
+  font-size: 60rpx;
+} 
+.home-image-text4{
+  margin-top: 36rpx;
+  font-size: 24rpx;
+} 
+.home-image-text5{
+  margin-top: 70rpx;
+  font-size: 20rpx;
+} 
+.home-image-icon{
+  left:0;
+  right:0;
+  top:0;
+  bottom: 0;
+  width: 30rpx;
+  height: 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+} 
+.home-invite{
+  position: absolute;
+  left:0;
+  right:0;
+  top: 260rpx;
+  width: 100%;
+  height: 150px;
+  color: #ffffff;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+}
+.home-invite-text{
+  display: block;
+  color: #ffffff;
+  font-size: 12px;
+  margin: auto;
+  margin-bottom: 30rpx;
+} 
+
+.home-invite-icon{
+  display: block;
+  width: 100rpx;
+  height: 100rpx;
+  margin: auto;  
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+} 
+ .home-sg-text{
+  display: block;
+  color: #ffffff;
+  font-size: 10px;
+  margin: auto;
+} 
+.home-sg-icon{
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  margin: auto;
+  margin-bottom: 10rpx;
+} 
+.home-image-button{
+  margin-top: 40rpx;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 30rpx;
+  height: 70rpx;
+  width: 236rpx;
+  border-radius: 35px;
+  border: 0px solid #ffffff;
+  color: #ffffff;
+  background-color: #fd6175;
+}
+
+.home-image-date-view{
+  position: absolute;
+  left:0;
+  right:0;
+  top: 600rpx;
+  color: #ffffff;
+  font-size: 14px;
+  display: block;
+}
+.home-image-date-view2{
+  position: absolute;
+  right:0;
+  top: 570rpx;
+  color: #ffffff;
+  font-size: 14px;
+  display: block;
+}
+.home-image-date {
+  font-size: 35px;
+  color: #ffffff;
+  position: absolute;
+  right: 70rpx;
+}
+.home-image-date-text {
+  font-size: 12px;
+  color: #ffffff;
+  position: absolute;
+  top: 48rpx;
+  right: 40rpx;
+}
+.home-image-date-text2 {
+  font-size: 12px;
+  color: #ffffff;
+  position: absolute;
+  top: 85rpx;
+  right: 40rpx;
+}
+.invitelove-image{
+  display: block;
+  position:relative;
+}
+.invitelove-image2{
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  font-size: 20rpx;
+  width: 120rpx;
+  margin-right: 40rpx;
+  justify-content: center;
+  align-items: center;
+}
+.invitelove-image-icon-bg{
+  width: 120rpx;
+  border-radius: 60rpx;
+  height: 120rpx;
+  margin-left: 40rpx;
+}
+.invitelove-image-icon-bg2{
+  width: 120rpx;
+  border-radius: 60rpx;
+  height: 120rpx;
+}
+.invitelove-image-icon{
+  width: 110rpx;
+  border-radius: 55rpx;
+  height: 110rpx;
+  left: 45rpx;
+  top: 2rpx;
+  position: absolute;
+}
+.invitelove-image-icon2-bg{
+  width: 120rpx;
+  border-radius: 60rpx;
+  height: 120rpx;
+  margin-left: 20rpx;
+}
+.invitelove-image-icon2{
+  width: 110rpx;
+  border-radius: 55rpx;
+  height: 110rpx;
+  left: 185rpx;
+  top: 2rpx;
+  position: absolute;
+}
+.invitelove-image-love{
+  width: 120rpx;
+  height: 120rpx;
+  left: 108rpx;
+  position: absolute;
+  display: none;
+}
+.home-raingking{
+  width: 100%;
+  color: #ffffff;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60rpx;
+  min-height: 500rpx;
+}
+.home-ranking-text {
+  padding:20rpx 40rpx;
+  width: 100%;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 30rpx;
+  margin-bottom: 0rpx;
+}
+.home-raingking-title{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.home-raingking-list{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size: 14px;
+  color: #000000;
+  line-height: 120rpx;
+}
+.home-ranking-rank {
+  width: 10%;
+  height: 120rpx;
+  padding-left: 40rpx;
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+.home-userinfo-icon {
+  width: 40%;
+  height: 120rpx;
+  position: absolute;
+  top: 80rpx;
+  left: 100rpx;
+  display: flex;
+  align-items: center;
+}
+.home-userinfo-icon2 {
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  height: 60rpx;
+  position: absolute;
+}
+.home-userinfo-icon3 {
+   position: absolute;
+   right: 100rpx;
+  top: 80rpx;
+  font-size: 20rpx;
+  color: #fd3c50;
+   display: flex;
+  flex-direction: column;
+}
+.home-userinfo-image-icon-bg{
+  width: 100rpx;
+  border-radius: 55rpx;
+  height: 100rpx;
+}
+.home-userinfo-image-icon{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 55rpx; 
+  left: 6rpx;
+  top: 4rpx;
+  position: absolute;
+}
+.home-userinfo-image-icon2-bg{
+  width: 100rpx;
+  border-radius: 55rpx;
+  height: 100rpx;
+  margin-left: 20rpx;
+}
+.home-userinfo-image-icon2{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 55rpx; 
+  left: 118rpx;
+  top: 4rpx;
+  position: absolute;
+}
+.home-userinfo-image-love{
+  width: 44rpx;
+  height: 40rpx;
+  left: 90rpx;
+  position: absolute;
+}
+
+.home-ranking-icon {
+  width: 40%;
+  height: 120rpx;
+  border-bottom: 1px solid #eeeeee;
+  position: relative;
+}
+.home-ranking-zuan {
+  width: 30%;
+  height: 120rpx;
+  border-bottom: 1px solid #eeeeee;
+}
+.home-ranking-days {
+  width: 20%;
+  height: 120rpx;
+  border-bottom: 1px solid #eeeeee;
+}
+.home-image-icon-bottom {
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+}
+
+.home-ranking-image-icon-bg{
+  width: 60rpx;
+  border-radius: 30rpx;
+  height: 60rpx;
+  margin-top: 30rpx;
+}
+.home-ranking-image-icon{
+  width: 52rpx;
+  height: 52rpx;
+  border-radius: 26rpx; 
+  left: 6rpx;
+  top: 34rpx;
+  position: absolute;
+}
+.home-ranking-image-icon2-bg{
+  width: 60rpx;
+  border-radius: 30rpx;
+  height: 60rpx;
+  margin-top: 30rpx;
+}
+.home-ranking-image-icon2{
+  width: 52rpx;
+  height: 52rpx;
+  border-radius: 26rpx; 
+  left: 67rpx;
+  top: 34rpx;
+  position: absolute;
+}
+.home-ranking-image-love{
+  width: 30rpx;
+  height: 26rpx;
+  left: 46rpx;
+  top: 46rpx;
+  position: absolute;
+}
+
+.inviteZf{
+  width: 330rpx;
+  height: 68rpx;
+  line-height: 64rpx;
+  background: #ffffff;
+  color: #fe3360;
+  font-size: 28rpx;
+  border-radius: 60rpx;
+  border: 1px solid #fe3360;
+  text-align: center;
+  margin-top: 40rpx;
+  margin-right: 40rpx;
+}
+.inviteMy{
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 30rpx;
+  height: 70rpx;
+  width: 280rpx;
+  border-radius: 35px;
+  border: 0px solid #ffffff;
+  color: #ffffff;
+  background-color: #fd6175;
+}
+.inviteInfo{
+  width: 145rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  background: transparent;
+  color: #ffffff;
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: 152rpx;
+  right: 0;
+  position: absolute;
+  border: 0px solid #ffffff;
+  background-color: #fd6175;
+  border-radius: 34rpx 0 0 34rpx;
+}
+button[class="home-image-button"]::after {
+  border: 0;
+}
+
+button[class="inviteZf"]::after {
+  border: 0;
+}
+
+button[class="inviteMy"]::after {
+  border: 0;
+}
+
+
+.invite-bottom-view {
+  padding: 10rpx 20rpx;
+}
+
+.invite-bottom-title {
+  display: block;
+  margin-bottom: 30rpx;
+  font-size: 20px;
+}
+
+.invite-bottom-item {
+  display: flex;
+  padding: 20rpx 0;
+}
+
+.invite-bottom-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.invite-bottom-text {
+  margin: 0 20rpx;
+  line-height: 40rpx;
+  font-size: 16px;
+}
+
+.invite-bottom-tip {
+  margin: 0 10rpx;
+  width: 180rpx;
+  line-height: 40rpx;
+  font-size: 14px;
+  color: #999999;
+}
+
+.invite-bottom-btn {
+  text-align: center;
+  width: 140rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  font-size: 16px;
+  background-color: #fe3360;
+  border-radius: 60rpx;
+  color: #ffffff;
+  margin-top: -2px;
+}
+
+button[class="nvite-bottom-btn"]::after {
+  border: 0;
+}
+
+.invite-bottom-cancel {
+  line-height: 110rpx;
+  background-color: #ffffff;
+  border-top: 1px solid #eeeeee;
+  border-radius: 0;
+  margin-bottom: -5rpx;
+}
+
+button[class="invite-bottom-cancel"]::after {
+  border: 0;
+}
+
+
+.sganim {
+  animation-fill-mode: both; /*播放后的状态*/
+  animation-iteration-count: infinite; /*动作循环的次数：infinite 无限循环*/
+  animation-duration: 1.5s; /*动画时间*/
+  transform-origin: center bottom; /*设置动画旋转元素的基点为：居中靠下*/
+  animation-name:sg; /*动画的名称*/
+}
+
+@keyframes sg{
+  60%{
+  transform: translate3d(0,-2px,0);
+  }
+}
+
+.clkanim0 {
+  animation-fill-mode: forwards; /*播放后的状态*/
+  animation-iteration-count: 1; /*动作循环的次数：infinite 无限循环*/
+  animation-duration: 1s; /*动画时间*/
+  animation-name:clksg0;
+}
+.clkanim1 {
+  animation-fill-mode: forwards; /*播放后的状态*/
+  animation-iteration-count: 1; /*动作循环的次数：infinite 无限循环*/
+  animation-duration: 1s; /*动画时间*/
+  animation-name:clksg1;
+}
+.clkanim2 {
+  animation-fill-mode: forwards; /*播放后的状态*/
+  animation-iteration-count: 1; /*动作循环的次数：infinite 无限循环*/
+  animation-duration: 1s; /*动画时间*/
+  animation-name:clksg2;
+}
+.clkanim3 {
+  animation-fill-mode: forwards; /*播放后的状态*/
+  animation-iteration-count: 1; /*动作循环的次数：infinite 无限循环*/
+  animation-duration: 1s; /*动画时间*/
+  animation-name:clksg3;
+}
+.clkanim4 {
+  animation-fill-mode: forwards; /*播放后的状态*/
+  animation-iteration-count: 1; /*动作循环的次数：infinite 无限循环*/
+  animation-duration: 1s; /*动画时间*/
+  animation-name:clksg4;
+}
+.clkanim5 {
+  animation-fill-mode: forwards; /*播放后的状态*/
+  animation-iteration-count: 1; /*动作循环的次数：infinite 无限循环*/
+  animation-duration: 1s; /*动画时间*/
+  animation-name:clksg5;
+}
+.clkanim6 {
+  animation-fill-mode: forwards; /*播放后的状态*/
+  animation-iteration-count: 1; /*动作循环的次数：infinite 无限循环*/
+  animation-duration: 1s; /*动画时间*/
+  animation-name:clksg6;
+}
+.clkanim7 {
+  animation-fill-mode: forwards; /*播放后的状态*/
+  animation-iteration-count: 1; /*动作循环的次数：infinite 无限循环*/
+  animation-duration: 1s; /*动画时间*/
+  animation-name:clksg7;
+}
+.clkanim8 {
+  animation-fill-mode: forwards; /*播放后的状态*/
+  animation-iteration-count: 1; /*动作循环的次数：infinite 无限循环*/
+  animation-duration: 1s; /*动画时间*/
+  animation-name:clksg8;
+}
+.clkanim9 {
+  animation-fill-mode: forwards; /*播放后的状态*/
+  animation-iteration-count: 1; /*动作循环的次数：infinite 无限循环*/
+  animation-duration: 1s; /*动画时间*/
+  animation-name:clksg9;
+}
+
+@keyframes clksg0{
+  0%{}
+  100%{
+      transform:translateY(-500px);
+  }
+}
+@keyframes clksg1{
+  0%{}
+  100%{
+      transform:translateY(-500px);
+  }
+}
+@keyframes clksg2{
+  0%{}
+  100%{
+      transform:translateY(-500px);
+  }
+}
+@keyframes clksg3{
+  0%{}
+  100%{
+      transform:translateY(-500px);
+  }
+}
+@keyframes clksg4{
+  0%{}
+  100%{
+      transform:translateY(-500px);
+  }
+}
+@keyframes clksg5{
+  0%{}
+  100%{
+      transform:translateY(-500px);
+  }
+}
+@keyframes clksg6{
+  0%{}
+  100%{
+      transform:translateY(-500px);
+  }
+}
+@keyframes clksg7{
+  0%{}
+  100%{
+      transform:translateY(-500px);
+  }
+}
+@keyframes clksg8{
+  0%{}
+  100%{
+      transform:translateY(-500px);
+  }
+}
+@keyframes clksg9{
+  0%{}
+  100%{
+      transform:translateY(-500px);
+  }
+}
+
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+
+.commodity_attr_box {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding-top: 20rpx;
+}
+
+/*弹窗  */
+
+.shade_box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shade_bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: shadeBg 0.3s 0.1s ease forwards;
+  opacity: 0;
+}
+
+.modal {
+  width: 60%;
+  height: 450rpx;
+  border-radius: 10rpx;
+  padding: 80rpx 50rpx;
+  animation: show 0.8s 0.4s ease forwards;
+  z-index: 1;
+  opacity: 0;
+  background: #fff;
+}
+.modal2 {
+  width: 60%;
+  height: 450rpx;
+  border-radius: 10rpx;
+  padding: 80rpx 50rpx;
+  animation: show 0.8s 0.4s ease forwards;
+  z-index: 1;
+  opacity: 0;
+}
+
+@keyframes shadeBg {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  33% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  55% {
+    transform: scale(0.95);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.madName {
+  margin-bottom: 40rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.m-invitelove-image{
+  display: block;
+  width: 400rpx;
+  height: 130rpx;
+  margin: auto;
+  justify-content: center;
+  position: relative;
+}
+.m-invitelove-image-icon-bg{
+  width: 90rpx;
+  height: 90rpx;
+  left: 110rpx;
+  top: 20rpx;
+  position: absolute;
+}
+.m-invitelove-image-icon{
+  width: 78rpx;
+  height: 78rpx;
+  left: 115rpx;
+  top: 25rpx;
+  border-radius: 39rpx;
+  position: absolute;
+}
+.m-invitelove-image-icon2-bg{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 39rpx;
+  left: 210rpx;
+  top: 20rpx;
+  position: absolute;
+}
+.m-invitelove-image-icon2{
+  width: 78rpx;
+  height: 78rpx;
+  left: 215rpx;
+  top: 25rpx;
+  border-radius: 39rpx;
+  position: absolute;
+}
+.m-invitelove-image-love{
+  width: 90rpx;
+  height: 90rpx;
+  left: 158rpx;
+  top: 20rpx;
+  position: absolute;
+}
+.m-invitelove-image-zf{
+  margin-top: 40rpx;
+  width: 120rpx;
+  height: 120rpx;
+  justify-content: center;
+}
+
+.splash-view {
+  width: 100%;
+  height: 100%;
+  position: fixed;  
+}
+
+.splash-view-image{
+   width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.splash-image{
+  width: 100%;
+  height:100%;
+}
+.splash-view-image2{
+  top:800rpx;
+  width: 500rpx;
+  height:90rpx;
+  position: absolute;
+  border: 5prx solid #ffdac7;
+}
+.splash-view-image-single{
+  left: 0;
+  width: 230rpx;
+  height:90rpx;
+  position: absolute;
+}
+.splash-view-image-double{
+  right: 0;
+  width: 230rpx;
+  height:90rpx;
+  position: absolute;
+}
+/** 修改button默认的点击态样式类**/
+.button-hover {
+  background-color: red;
+}
+/** 添加自定义button点击态样式类**/
+.other-button-hover {
+  background-color: blue;
+}

@@ -1,0 +1,21 @@
+{
+  "pages": [
+  
+    "pages/sponsor/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/sponsor/invitelove/index",
+    "pages/sponsor/strategy/index",
+    "pages/sponsor/lovegarden/index",
+    "pages/sponsor/forget/index",
+    "pages/sponsor/settings/index"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fe3360",
+    "navigationBarTitleText": "恋爱链",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
+  }
+}

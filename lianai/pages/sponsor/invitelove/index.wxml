@@ -1,0 +1,47 @@
+<!--pages/sponsor/Invitelove/index.wxml-->
+<view class='container'>
+  <view class='settings-view'>
+  <view class='settings-view-toolbar'>
+    <image class='page-view-back' src="/images/back.png" bindtap='navigateBack'></image>
+    <text class='page-view-text'> 恋爱链</text>
+</view>
+<view class='invitelove-view'>
+    <view class='invitelove-image'>
+        <image class='invitelove-image-icon' src='/images/sponsor_main_photo_man.png'></image>
+         <image class='invitelove-image-icon2' src='/images/sponsor_main_photo_woman.png'></image> 
+    </view>
+    <view class='invitelove-text'>
+      请完善恋爱信息
+    </view>
+    <view class='input-time'>
+    <text class='input-text'>恋爱时间：</text>
+        <picker class="input-value2" mode="date" value="{{loveBeginDate}}"  bindchange="bindDateChange">
+          <view class="input-value-data">{{loveBeginDate}}</view>
+        </picker>
+    </view>
+    <view class='input-time'>
+    <text class='input-text'>恋爱保险：</text>
+    <text class='input-value' bindtap='onShareTap'>{{insureOption}}</text>
+    </view>
+    <view class="{{insured?'show':'hide'}}">
+    <view class='input-time'>
+    <text class='input-text'>保险名称：</text>
+     <text class='input-value' bindtap='onShareTap2'>{{insureProduct}}</text>
+    </view>
+    <view class='input-time'>
+    <text class='input-text'>生效日期：</text>
+        <picker class="input-value2" mode="date" value="{{insureTime}}" bindchange="bindDateChange2">
+          <view class="input-value-data">{{insureTime}}</view>
+        </picker>
+    </view>
+    <view class="forget" bindtap='onForget'>忘记生效日期?</view>
+    </view>
+
+    <view class="{{dataSelected?'invitelove-button-view':'hide'}}">
+    <button class='invitelove-button' open-type="share">邀请心上人</button>
+    </view>
+</view>
+
+</view>
+</view>
+

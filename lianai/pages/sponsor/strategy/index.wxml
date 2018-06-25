@@ -1,0 +1,21 @@
+<view class='container'>
+  <view class='strategy-view'>
+    <view class='strategy-view-toolbar'>
+      <image class='page-view-back' src="/images/back.png" bindtap='navigateBack'></image>
+      <text class='page-view-text' wx:if="{{mType==1}}"> 公告</text>
+      <text class='page-view-text' wx:if="{{mType==2}}"> 攻略</text>
+    </view>
+
+    <view class="strategy-view-image" wx:if="{{mType==1}}">
+      <scroll-view style="width: 720rpx;height:880rpx;">
+        <image class='strategy-image' src="{{imgUrl}}"></image>
+      </scroll-view>
+    </view>
+
+    <view class="strategy-view-image" wx:if="{{mType==2}}">
+      <scroll-view scroll-y="true" style="width: 100%;height:100%;">
+        <image class='strategy-image2' src="{{imgUrl}}"></image>
+      </scroll-view>
+    </view>
+  </view>
+</view>

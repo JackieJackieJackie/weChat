@@ -1,0 +1,24 @@
+<view class='container'>
+  <view class='settings-view'>
+  <view class='settings-view-toolbar'>
+    <image class='page-view-back' src="/images/back.png" bindtap='navigateBack'></image>
+    <text class='page-view-text'> 设置</text>
+</view>
+ <view class="settings-view-myService"   wx:if="{{false}}" >
+    <text class='settings-contact'>地址管理</text>
+     <view class='navigator-arrow'></view>
+  </view> 
+   
+  <button class="cs_button" open-type="contact" session-from="weapp">
+    <text class='settings-contact'>我的客服</text>
+     <view class='navigator-arrow2'></view>
+  </button> 
+  <view class="settings-view-myService2" wx:if="{{false}}">
+    <text class='settings-contact'>关于我们</text>
+     <view class='navigator-arrow'></view>
+  </view> 
+  </view>
+ 
+
+   
+</view>

@@ -1,0 +1,861 @@
+/* pages/sponsor/lovepark/index.wxss */
+
+.garden-view {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  justify-content: center;
+  display: flex;
+}
+
+.garden-view-bg {
+  width: 100%;
+  height: 100%;
+}
+
+.invite-bottom-view {
+  padding: 10rpx 20rpx;
+}
+
+.invite-bottom-title {
+  display: block;
+  margin-bottom: 30rpx;
+  font-size: 40rpx;
+}
+
+.invite-bottom-item {
+  display: flex;
+  padding: 20rpx 0;
+}
+
+.invite-bottom-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.invite-bottom-text {
+  margin: 0 20rpx;
+  line-height: 40rpx;
+  font-size: 32rpx;
+}
+
+.invite-bottom-tip {
+  margin: 0 10rpx;
+  width: 180rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.invite-bottom-btn {
+  text-align: center;
+  width: 140rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  font-size: 31rpx;
+  background-color: #fe3360;
+  border-radius: 60rpx;
+  color: #fff;
+  margin-top: -2px;
+}
+
+button[class="nvite-bottom-btn"]::after {
+  border: 0;
+}
+
+.img-plus-style {
+  height: 104rpx;
+  width: 100rpx;
+  position: absolute;
+  bottom: 250rpx;
+  right: 40rpx;
+  z-index: 100;
+}
+
+.img-style {
+  height: 90rpx;
+  width: 90rpx;
+  position: absolute;
+  bottom: 250rpx;
+  right: 40rpx;
+  opacity: 0;
+}
+
+.garden-modal-image-view {
+  position: absolute;
+  right: 40rpx;
+  top: 250rpx;
+  display: flex;
+  flex-direction: column;
+}
+.garden-seeding {
+  position: absolute;
+  top: 400rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   width: 60%;
+   height: 50%;
+}
+.garden-seed-img{
+  position: absolute;
+  bottom: 0;
+  width: 164rpx;
+  height: 36rpx;
+}
+.garden-seed-img2{
+  width: 126rpx;
+  height: 143rpx;
+}
+
+.garden-seed-img3{
+   position: absolute;
+  bottom: 0;
+  width: 164rpx;
+  height: 306rpx;
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.garden-seed-img5{
+    position: absolute;
+  bottom: 0;
+   width: 146rpx;
+  height: 98rpx;
+}
+.garden-seed-img6{
+   position: absolute;
+  bottom: 0;
+  width: 146rpx;
+  height: 177rpx;
+}
+.sganim {
+  animation-fill-mode: both; /*播放后的状态*/
+  animation-iteration-count: infinite; /*动作循环的次数：infinite 无限循环*/
+  animation-duration: 1.5s; /*动画时间*/
+  transform-origin: center bottom; /*设置动画旋转元素的基点为：居中靠下*/
+  animation-name:sg; /*动画的名称*/
+}
+
+@keyframes sg{
+  60%{
+  transform: translate3d(0,-10rpx,0);
+  }
+}
+.garden-user-view {
+  position: absolute;
+  left: 40rpx;
+  top: 142rpx;
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.garden-user-photo {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 55rpx;
+  margin: 0 20rpx 0 0;
+  
+}
+.garden-user-photo-border {
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 55rpx;
+  margin: 0 20rpx 0 0;
+  border: 2px solid #fe3360;
+  border-color:#FAEBD7;
+}
+.garden-user-info {
+  height: 100rpx;
+  left: 40rpx;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.garden-user-info-view {
+  height: 45rpx;
+  width: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.garden-user-info-view2 {
+  margin-top: 10rpx;
+  height: 45rpx;
+  width: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.garden-user-info-bg-image {
+  height: 45rpx;
+  width: 200rpx;
+  position: fixed;
+}
+
+.garden-user-info-text {
+  position: fixed;
+}
+
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+.garden-modal-shop-view {
+  position: absolute;
+  left: 0;
+   z-index: 2000;
+  top: 150rpx;
+  display: flex;
+  flex-direction: row;
+}
+.garden-modal-shop-img2 {
+  width: 10%;
+   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.garden-modal-shop-img {
+  width: 600rpx;
+  height: 1144rpx;
+  position: relative;
+  z-index: 2000;
+}
+
+.garden-modal-image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 20rpx;
+}
+
+
+.garden_modal_main {
+  margin: 0 40rpx;
+  width: 520rpx;
+  z-index: 2000;
+}
+
+.garden-modal-seed-cancel {
+  width: 60rpx;
+  height: 60rpx;
+  margin-bottom: 120rpx;
+}
+
+.garden-modal-shop-modal-img {
+  width: 60rpx;
+  height: 120rpx;
+}
+
+
+.cart-list {
+  position: relative;
+  height: 300rpx;
+  padding: 20rpx 0 0 0;
+}
+.cart-list-nodata {
+  position: relative;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-list .garden-modal-seed-img {
+  width: 100%;
+  height: 300rpx;
+  position: absolute;
+}
+
+.cart-list .cart-pro-select {
+  position: absolute;
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.cart-list .cart-thumb {
+  position: absolute;
+  width: 120rpx;
+  height: 120rpx;
+  margin-top: 90rpx;
+  margin-left: 20rpx;
+}
+.cart-list .cart-thumb2 {
+  position: absolute;
+  width: 160rpx;
+  height: 160rpx;
+  margin-top: 90rpx;
+  margin-left: 20rpx;
+}
+
+.cart-list .cart-title-text {
+  padding: 5rpx 20rpx 5rpx 20rpx;
+  color: #fff;
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  position: absolute;
+  border: 0px solid #fff;
+  background-color: #cf3f1b;
+  border-radius: 34rpx 34rpx 34rpx 34rpx;
+}
+
+.cart-list .cart-title-text2 {
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: 30rpx;
+  right: 20rpx;
+  position: absolute;
+  color: #cf3f1b;
+}
+
+.cart-list .cart-thumb-text {
+  position: absolute;
+  margin-top: 100rpx;
+  margin-left: 160rpx;
+  color: #cf3f1b;
+}
+
+.cart-list .cart-thumb-text2 {
+  position: absolute;
+  margin-top: 150rpx;
+  margin-left: 160rpx;
+  color: #cf3f1b;
+}
+
+.cart-list .cart-pro-name {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.cart-list .cart-count-box {
+  position: absolute;
+  height: 60rpx;
+  margin-top: 220rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.cart-list .cart-count-box2 {
+  position: absolute;
+  height: 120rpx;
+  margin-left: 200rpx;
+  margin-top: 70rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cart-list .cart-count-box2-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.cart-list .cart-count-box text {
+  display: inline-block;
+  line-height: 80rpx;
+  text-align: center;
+  
+}
+
+.cart-count-down, .cart-count-add {
+  width: 60rpx;
+  height: 60rpx;
+}
+.cart-pro-price-text-view{
+   height: 60rpx;
+  width: 150rpx;
+  right: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.cart-pro-price-bg-view {
+  height: 60rpx;
+  width: 180rpx;
+  margin-top: 220rpx;
+  position: absolute;
+  right: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.cart-pro-price-bg-view2 {
+  height: 60rpx;
+  width: 200rpx;
+  display: flex;
+  margin-top: 90rpx;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.cart-pro-num-bg {
+  height: 60rpx;
+  width: 100rpx;
+  position: absolute;
+}
+.cart-pro-num-bg-text {
+  position: absolute;
+  
+}
+.cart-pro-price-bg {
+  height: 60rpx;
+  width: 150rpx;
+  position: absolute;
+}
+.cart-pro-price-bg-text {
+  position: absolute;
+  padding-left: 60rpx;
+  padding-right: 60rpx;
+  color: #cf3f1b;
+  
+}
+
+
+
+
+.cart-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  padding: 0 100rpx 0 80rpx;
+  box-sizing: border-box;
+  background: #ab956d;
+  color: #fff;
+}
+
+.total-select {
+  position: absolute;
+  left: 20rpx;
+  top: 25rpx;
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.order-icon {
+  position: absolute;
+  right: 40rpx;
+  top: 25rpx;
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.order-icon image, .order-icon navigator {
+  display: block;
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.cart-toatl-price {
+  float: right;
+  width: 120rpx;
+}
+
+.cart-no-data {
+  margin: 220rpx 0;
+  width: 249rpx;
+  height: 227rpx;
+}
+.cart-no-data2 {
+  margin: 220rpx 0;
+  width: 222rpx;
+  height: 175rpx;
+}
+.cart-no-data3 {
+  margin: 180rpx 0;
+  width: 194rpx;
+  height: 190rpx;
+}
+/* .scroll-view_H{
+  width: 100%;
+  white-space: nowrap;
+}
+.scroll-view-item_H{
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+} */
+.garden-maodal-main-warehouse{
+    padding:0;
+}
+.garden-maodal-main-warehouse-nodata{
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.garden-maodal-main-warehouse .warehouse-list{
+    display: inline-block;
+    width: 153rpx;
+    height: 153rpx;
+    margin:10rpx;
+    border-radius: 10px;
+    text-align: center;
+}
+.warehouse-image-view{
+  width: 153rpx;
+  height: 153rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* .newest-box .newest-list:nth-child(2n){
+    margin: 0;
+} */
+.garden-maodal-main-warehouse .warehouse-list image{
+    width: 120rpx;
+    height: 120rpx;
+}
+.garden-maodal-main-warehouse .warehouse-list {
+    font-size: 32rpx;
+}
+.garden-maodal-main-warehouse2{
+  height: 432rpx;
+
+}
+.garden-maodal-main-warehouse3{
+  height: 282rpx;
+
+}
+.garden-maodal-main-warehouse4{
+  height: 332rpx;
+
+}
+.warehouse_item_bg{
+  height: 350rpx;
+  width: 520rpx;
+  position: absolute;
+}
+.warehouse_item_bg2{
+  height: 300rpx;
+  width: 520rpx;
+  position: absolute;
+}
+.shape-red-text{
+  padding: 5rpx 20rpx ;
+  color: #fff;
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  margin-left: 20rpx;
+  border: 0px solid #fff;
+  background-color: #cf3f1b;
+  border-radius: 34rpx 34rpx 34rpx 34rpx;
+  position: absolute;
+}
+.warehouse-text-row{
+  margin-top: 98rpx;
+  display: flex;
+  flex-direction: row;
+  height:120rpx;
+  width: 100%;
+  position: absolute;
+  font-size: 24rpx;
+}
+.warehouse-text-row7{
+  margin-top: 48rpx;
+  display: flex;
+  flex-direction: row;
+  height:120rpx;
+  width: 100%;
+  position: absolute;
+  font-size: 24rpx;
+}
+.warehouse-text-row2{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-left: 160rpx;
+
+}
+.cart-thumb3 {
+  position: absolute;
+  width: 120rpx;
+  height: 120rpx;
+  margin: 0 0 0 20rpx;
+}
+.warehouse-text-num{
+  color: #cf3f1b;
+  margin-left: 10rpx;
+
+
+}
+.warehouse-text-row3{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-left: 310rpx;
+
+}
+.warehouse-text-row4{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-left: 160rpx;
+  margin-top: 44rpx;
+
+}
+.warehouse-text-row5{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-top: 44rpx;
+  margin-left: 310rpx;
+
+}
+
+.warehouse-text-row6{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-top: 88rpx;
+  margin-left: 160rpx;
+
+}
+.warehouse-pirce{
+  margin-top: 250rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.warehouse-pirce2{
+  margin-top: 200rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.warehouse-button{
+  margin-top: 350rpx;
+  height: 82rpx;
+  width: 520rpx;
+  position: absolute;
+}
+.warehouse-button-img{
+  margin-top: 25rpx;
+  margin-left: 20rpx;
+  height: 60rpx;
+  width: 180rpx;
+  position: absolute;
+}
+.warehouse-button-img2{
+  margin-top: 25rpx;
+  height: 60rpx;
+  width: 180rpx;
+  right: 20rpx;
+  position: absolute;
+}
+.warehouse-show{
+    height: 60rpx;
+  width: 150rpx;
+  right: 20rpx;
+  margin-top: 250rpx;
+  position: absolute;
+}
+.warehouse-show2{
+    height: 60rpx;
+  width: 150rpx;
+  right: 20rpx;
+  margin-top: 200rpx;
+  position: absolute;
+}
+.warehouse-show3{
+    height: 60rpx;
+  width: 150rpx;
+  right: 20rpx;
+  margin-top: 100rpx;
+  position: absolute;
+}
+
+.warehouse-show4{
+    height: 60rpx;
+  width: 150rpx;
+  right: 20rpx;
+  margin-top: 180rpx;
+  position: absolute;
+}
+/*弹窗  */
+
+.shade_box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shade_bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: shadeBg 0.3s 0.1s ease forwards;
+  opacity: 0;
+}
+
+.garden-modal-order {
+  border-radius: 10rpx;
+  padding: 80rpx 50rpx;
+  animation: show 0.8s 0.4s ease forwards;
+  z-index: 1;
+  opacity: 0;
+}
+.garden-modal-strategy {
+  border-radius: 10rpx;
+  animation: show 0.8s 0.4s ease forwards;
+  z-index: 1;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+}
+@keyframes shadeBg {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  33% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  55% {
+    transform: scale(0.95);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.img {
+  width: 100%;
+}
+.img-strategy {
+  width: 100%;
+   position: absolute;
+   top: 60rpx;
+}
+.close-strategy  {
+  width: 60rpx;
+  height: 60rpx;
+  right: 30rpx;
+  position: absolute;
+}
+.close {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 0;
+}
+.home-userinfo-view{
+  position: absolute;
+  top: 160rpx;
+  height: 60rpx;
+  left: 20rpx;
+  right: 20rpx;
+  font-size: 24rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.garden-modal-order-list{
+   position: absolute;
+  top: 240rpx;
+  left: 0;
+  right: 0;
+  font-size: 24rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.home-userinfo-view1{
+   width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home-userinfo-view2{
+   width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ .garden-modal-order-icon{
+   height: 60rpx;
+   width: 170rpx;
+} 
+ .garden-modal-order-list-text{
+  left:0;
+  right:0;
+  top:0;
+  bottom: 0;
+  margin:auto;
+  font-weight:bold;
+} 
+
+
+.garden-modal-order-list-item{
+    width: 100%;
+    margin: 0 0 40rpx 0;
+  font-size: 24rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #a22a20;
+}
